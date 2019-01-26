@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2.5sp"
+    android:paddingTop="2.5sp">
+
+    <ImageView
+        android:id="@+id/imageListPoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/movieListPosterContentDescription"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/labelListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="5sp"
+        android:layout_toEndOf="@+id/imageListPoster"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelListOriginalTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/labelListTitle"
+        android:layout_marginStart="15sp"
+        android:layout_toEndOf="@+id/imageListPoster"
+        android:textColor="@color/colorHighlight"
+        android:textSize="9sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/labelListOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelListOriginalTitle"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="5sp"
+        android:layout_toEndOf="@+id/imageListPoster"
+        android:textColor="@color/secondaryTextColor" />
+
+    <ImageView
+        android:id="@+id/imageListReleaseDate"
+        android:layout_width="17sp"
+        android:layout_height="17sp"
+        android:layout_below="@+id/labelListOverview"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="5sp"
+        android:layout_toEndOf="@+id/imageListPoster"
+        android:contentDescription="@string/movieListPosterContentDescription"
+        app:srcCompat="@drawable/date" />
+
+    <TextView
+        android:id="@+id/labelListReleaseDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelListOverview"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="5sp"
+        android:layout_toEndOf="@+id/imageListReleaseDate"
+        android:textColor="@color/secondaryTextColor" />
+
+    <ImageView
+        android:id="@+id/imageListRating"
+        android:layout_width="17sp"
+        android:layout_height="17sp"
+        android:layout_below="@+id/imageListReleaseDate"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="5sp"
+        android:layout_toEndOf="@+id/imageListPoster"
+        android:contentDescription="@string/movieListPosterContentDescription"
+        app:srcCompat="@drawable/rating_empty" />
+
+    <TextView
+        android:id="@+id/labelListRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageListReleaseDate"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="5sp"
+        android:layout_toEndOf="@+id/imageListReleaseDate"
+        android:textColor="@color/secondaryTextColor" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="movieListPosterContentDescription">A picture</string>
+    <string name="buttonDetails">Details</string>
+    <string name="buttonAddToWatchlist">+ Add to Watchlist</string>
+    <string name="rateThis">Rate This</string>
+    <string name="labelCast">Cast</string>
+    <string name="director">Director: </string>
+    <string name="producer">Producers: </string>
+    <string name="labelImages">Images</string>
+    <string name="budget">Budget: </string>
+</resources>
